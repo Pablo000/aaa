@@ -119,7 +119,7 @@ function sliceCategory(category) {
 
 var trivia = {};
 
-var triviaRoom = Rooms.get('trivia');
+var triviaRoom = Rooms.get('Lobby');
 if (triviaRoom) {
 	if (triviaRoom.plugin) {
 		triviaData = triviaRoom.plugin.data;
