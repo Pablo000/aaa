@@ -15,12 +15,12 @@ var scavengers = {
 	result: null
 };
 
-var scavengersRoom = Rooms.get('scavengers');
+var scavengersRoom = Rooms.get('Lobby');
 if (scavengersRoom) {
 	if (scavengersRoom.plugin) {
 		scavengers = scavengersRoom.plugin;
 	} else {
-		scavengersRoom.plugin = scavengers;
+		scavengersRoom.plugin = Lobby;
 	}
 }
 
